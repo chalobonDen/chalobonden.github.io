@@ -1,6 +1,7 @@
 import React from 'react';
 // import { StaticImage } from 'gatsby-plugin-image';
 import Social from '../components/Social';
+import profile1 from '../images/profile1.jpg';
 
 const Sidebar = () => {
   return (
