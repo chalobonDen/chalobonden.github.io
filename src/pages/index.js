@@ -14,7 +14,7 @@ const IndexPage = () => {
             src="../images/profile1.jpg"
             alt="A profile"
             placeholder="blurred"
-            className="block mx-auto w-60 h-60 rounded-bl-full rounded-br-full rounded-tr-full rounded-tl-full mb-10 mt-10"
+            className="block mx-auto w-60 h-60 rounded-3xl mb-10 mt-10"
           />
           <ReactTypingEffect
             text={['I am Chalobon', 'I am a Front-End Developer']}
