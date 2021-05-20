@@ -25,7 +25,7 @@ const educationData = [
 const experienceData = [
   {
     id: 1,
-    orgName: 'Med CMU operarion and data menagement center',
+    orgName: 'Med CMU operation and data management center',
     period: 'May 21, 2019 - July 30, 2019',
     jop_position: 'Data Analysis',
   },
