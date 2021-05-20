@@ -22,12 +22,6 @@ const Skill = ({ skillData }) => {
                 </p>
               );
             })}
-            {/* <p>MySQL</p>
-            <p className="lg:pl-6 ">PHP</p>
-            <p className="lg:pl-6 ">JavaScript</p>
-            <p className="lg:pl-6 ">C</p>
-            <p className="lg:pl-6 ">CSS</p>
-            <p className="lg:pl-6 ">HTML</p> */}
           </div>
         </div>
       </div>

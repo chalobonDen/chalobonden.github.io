@@ -23,19 +23,6 @@ const Experience = ({ experienceData }) => {
                 </div>
               );
             })}
-
-            {/* <div className="2lg:pb-2">
-              <p className="font-bold">
-                Med CMU operarion and data menagement center
-              </p>
-              <p>May 21, 2019 - July 30, 2019</p>
-              <p>Data Analysis</p>
-            </div>
-            <div className="lg:pl-6 2lg:pt-2">
-              <p className="font-bold">Aritisan Digital</p>
-              <p>July 8, 2020 - March 19, 2021</p>
-              <p>Front-End Developer</p>
-            </div> */}
           </div>
         </div>
       </div>

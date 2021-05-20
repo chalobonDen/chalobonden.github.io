@@ -8,7 +8,6 @@ const Education = ({ educationData }) => {
         <div className="text-gray-600">
           <h2 className="text-gray-700 text-2xl font-semibold">Education</h2>
           <div className="mt-2 lg:grid lg:grid-cols-2 lg:divide-x 2lg:grid-cols-1 2lg:divide-y">
-            {/* แบบ mock data */}
             {educationData.map((data) => {
               return (
                 <div
@@ -24,24 +23,6 @@ const Education = ({ educationData }) => {
                 </div>
               );
             })}
-
-            {/* แบบใส่ค่าไปเลย */}
-            {/* <div className="2lg:pb-2">
-              <p className="font-bold">
-                Modern Management and Information Technology
-              </p>
-              <p>August 7, 2017 - April 5, 2021</p>
-              <p>
-                College of Art, Media and Technology in Chiang Mai University
-              </p>
-              <p>GPA : 3.37</p>
-            </div>
-            <div className="lg:pl-6 2lg:pt-2">
-              <p className="font-bold">High School: Horpra School</p>
-              <p>2013 - 2016</p>
-              <p>Major: Sci-Math</p>
-              <p>GPA : 3.65</p>
-            </div> */}
           </div>
         </div>
       </div>
