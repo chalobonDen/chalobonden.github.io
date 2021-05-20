@@ -10,7 +10,8 @@ const Sidebar = () => {
           src="../images/profile1.jpg"
           alt="A profile"
           placeholder="blurred"
-          className="block mx-auto w-60 h-60 rounded-full mb-10 "
+          className="block mx-auto w-60 h-60 mb-10 "
+          style={{ borderRadius: '100%' }}
         />
         <span className="block">Chalobon Denninnart </span>
         <span className="block">Front-End Developer</span>
