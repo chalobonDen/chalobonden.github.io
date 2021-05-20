@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithubAlt } from '@react-icons/all-files/fa/FaGithubAlt';
 import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook';
-import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
 
 const Social = () => {
   return (
@@ -9,8 +9,8 @@ const Social = () => {
       <a href="https://github.com/chalobonDen">
         <FaGithubAlt className="inline" />
       </a>
-      <a href="https://www.instagram.com/jayjay_clb/">
-        <FaInstagram className="inline" />
+      <a href="https://www.linkedin.com/in/chalobon-denninnart-a077b7206">
+        <FaLinkedinIn className="inline" />
       </a>
       <a href="https://www.facebook.com/sujunemo">
         <FaFacebook className="inline" />

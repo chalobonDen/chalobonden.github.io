@@ -20,7 +20,7 @@ const IndexPage = () => {
           <img
             src={profile1}
             alt="profile"
-            className="block mx-auto w-60 h-60 rounded-full mb-10 mt-10"
+            className="block object-cover mx-auto w-60 h-60 rounded-full mb-10 mt-10"
           />
           <ReactTypingEffect
             text={['I am Chalobon', 'I am a Front-End Developer']}
