@@ -7,7 +7,7 @@ const Skill = ({ skillData }) => {
       <div className="shadow-md py-4 px-8 bg-white bg-opacity-30 rounded-md">
         <div>
           <h2 className="text-gray-700 text-2xl font-semibold">Skill</h2>
-          <div className="mt-2 lg:grid lg:grid-cols-8 lg:divide-x lg:divide-gray-300">
+          <div className="mt-2 lg:grid lg:grid-cols-9 lg:divide-x lg:divide-gray-300">
             {skillData.map((data) => {
               return (
                 <p

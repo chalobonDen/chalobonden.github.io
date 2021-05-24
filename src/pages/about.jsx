@@ -70,6 +70,10 @@ const skillData = [
     id: 8,
     name: 'React.js',
   },
+  {
+    id: 9,
+    name: 'Angular.js',
+  },
 ];
 
 const About = () => {
