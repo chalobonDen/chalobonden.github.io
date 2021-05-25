@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'react-alice-carousel/lib/alice-carousel.css';
 /* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 html,
@@ -83,4 +84,21 @@ body {
   hr {
     display: none;
   }
+}
+
+/* picture slideshow */
+.slideImg .cGKbZh:hover:enabled,
+.slideImg .cGKbZh:focus:enabled {
+  color: #fff;
+  background-color: #c2d3bd;
+  box-shadow: none;
+}
+.slideImg .cGKbZh {
+  color: #fff;
+  background-color: #fecaca80;
+  box-shadow: none;
+}
+
+.slideImg .ehkxHv {
+  background-color: #eed4d4d1;
 }

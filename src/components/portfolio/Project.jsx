@@ -22,7 +22,7 @@ const Project = ({ projectData }) => {
                   </header>
 
                   <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                    <p className="ml-2 text-sm">{data.detail}</p>
+                    <p className="text-sm">{data.detail}</p>
 
                     <span className="hidden">Like</span>
                     <i className="fa fa-heart"></i>
