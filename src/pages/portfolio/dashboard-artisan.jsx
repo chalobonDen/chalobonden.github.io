@@ -19,7 +19,7 @@ const portfolio = (props) => {
   ];
   return (
     <Layout>
-      <div className="withoutsidebar space-y-5 ">
+      <div className="withoutsidebar space-y-5 text-center">
         <h1 className="text-gray-700 text-3xl font-semibold text-center">
           Portfolio
         </h1>
@@ -37,7 +37,19 @@ const portfolio = (props) => {
             <img src={photo3} className="w-72 h-auto" />
             <img src={photo4} className="w-72 h-auto" />
             <img src={photo5} className="w-72 h-auto" />
+            <img src={photo6} className="w-72 h-auto" />
+            <img src={photo7} className="w-72 h-auto" />
           </Carousel>
+        </div>
+        <div className="pb-10">
+          <p>This is Cooperative Education Project</p>
+          <p>Created by Vue.js</p>
+          <a href="https://dashboard-artisan.web.app/">
+            Link : https://dashboard-artisan.web.app/
+          </a>
+          <a href="https://github.com/artisan-playground/dashboard.artisandigital.xyz">
+            Link : github repo
+          </a>
         </div>
       </div>
     </Layout>

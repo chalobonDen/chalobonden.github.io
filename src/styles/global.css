@@ -87,18 +87,31 @@ body {
 }
 
 /* picture slideshow */
-.slideImg .cGKbZh:hover:enabled,
+/* .slideImg .cGKbZh:hover:enabled,
 .slideImg .cGKbZh:focus:enabled {
   color: #fff;
   background-color: #c2d3bd;
   box-shadow: none;
+} */
+
+.rec.rec-arrow:disabled {
+  visibility: hidden;
 }
-.slideImg .cGKbZh {
+
+.slideImg .rec-arrow {
   color: #fff;
   background-color: #fecaca80;
   box-shadow: none;
 }
 
-.slideImg .ehkxHv {
-  background-color: #eed4d4d1;
+.slideImg .rec-arrow:active .rec-arrow:hover:enabled .rec-arrow:focus:enabled {
+  color: #fff;
+  background-color: #c2d3bd;
+  box-shadow: none;
+}
+
+.rec.rec-arrow:hover {
+  color: #fff;
+  background-color: #c2d3bd;
+  box-shadow: none;
 }
