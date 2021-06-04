@@ -40,6 +40,15 @@ const projectData = [
     projectImg: 'https://imgur.com/R81wlCn.png',
     path: '/portfolio/sofa',
   },
+  {
+    id: 5,
+    projectName: 'Todo App',
+    detail: 'Todo App : Angular, React, Vue',
+    type: '',
+    link: null,
+    projectImg: 'https://imgur.com/O7BRfAb.png',
+    path: '/portfolio/todoApp',
+  },
 ];
 
 const portfolio = (props) => {
