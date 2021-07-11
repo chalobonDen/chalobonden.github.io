@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Project from '../../components/portfolio/Project';
 import PropTypes from 'prop-types';
+import useApiRequest from '../../lib/useApiRequest';
 
 const projectData = [
   {
@@ -51,7 +52,18 @@ const projectData = [
   },
 ];
 
-const portfolio = (props) => {
+const Portfolio = () => {
+  const { data, error, isLoaded } = useApiRequest(
+    'https://gitconnected.com/v1/portfolio/chalobonden'
+  );
+  console.log('get data from useApiRequest :', data.projects);
+
+  if (error !== null) {
+    return <div>Error: {error.message}</div>;
+  }
+  if (!isLoaded) {
+    return <div className="text-center pt-96">Loading...</div>;
+  }
   return (
     <Layout>
       <div className="withoutsidebar space-y-5">
@@ -64,6 +76,6 @@ const portfolio = (props) => {
   );
 };
 
-portfolio.propTypes = {};
+Portfolio.propTypes = {};
 
-export default portfolio;
+export default Portfolio;

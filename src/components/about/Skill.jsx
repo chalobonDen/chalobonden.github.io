@@ -2,18 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Skill = ({ skillData }) => {
+  if (!skillData) {
+    return <div></div>;
+  }
+
   return (
     <div>
       <div className="shadow-md py-4 px-8 bg-white bg-opacity-30 rounded-md">
         <div>
           <h2 className="text-gray-700 text-2xl font-semibold">Skill</h2>
           <div className="mt-2 lg:grid lg:grid-cols-9 lg:divide-x lg:divide-gray-300">
-            {skillData.map((data) => {
+            {skillData.map((data, i) => {
               return (
                 <p
-                  key={data.id}
+                  key={i}
                   className={`${
-                    data.id === 1
+                    i === 1
                       ? 'skill font-semibold'
                       : 'skill font-semibold lg:pl-6'
                   }`}

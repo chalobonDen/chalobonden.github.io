@@ -4,7 +4,21 @@ import ReactTypingEffect from 'react-typing-effect';
 // import { StaticImage } from 'gatsby-plugin-image';
 import Social from '../components/Social';
 import profile1 from '../images/profile1.jpg';
+import { useState, useEffect } from 'react';
+
 const IndexPage = () => {
+  const [data, setData] = useState(null);
+  console.log(data);
+  useEffect(() => {
+    fetch('https://gitconnected.com/v1/portfolio/chalobonden')
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
+  if (!data) {
+    return <div></div>;
+  }
+
   return (
     <Layout>
       <section className="text-center m-5 flex justify-center items-center">
