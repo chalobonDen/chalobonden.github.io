@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Experience = ({ experienceData, getMonthToString }) => {
-  if (!experienceData) {
-    return <div></div>;
-  }
+const Experience = ({ experienceData }) => {
   return (
     <div>
       <div className="shadow-md py-4 px-8 bg-white rounded-md bg-opacity-30">
@@ -12,18 +9,17 @@ const Experience = ({ experienceData, getMonthToString }) => {
           <h2 className="text-gray-700 text-2xl font-semibold">Experience</h2>
           <p className="font-bold mt-2 text-lg underline ">Internship</p>
           <div className=" lg:grid lg:grid-cols-2 lg:divide-x 2lg:grid-cols-1 2lg:divide-y">
-            {experienceData.map((data, i) => {
+            {experienceData.map((data) => {
               return (
                 <div
-                  key={i}
-                  className={`${i === 0 ? '2lg:pb-2' : 'lg:pl-6 2lg:pt-2'}`}
+                  key={data.id}
+                  className={`${
+                    data.id === 1 ? '2lg:pb-2' : 'lg:pl-6 2lg:pt-2'
+                  }`}
                 >
-                  <p className="font-bold">{data.position}</p>
-                  <p>
-                    {getMonthToString(data.start.month)} {data.start.year} -{' '}
-                    {getMonthToString(data.end.month)} {data.end.year}
-                  </p>
-                  <p>{data.company}</p>
+                  <p className="font-bold">{data.jop_position}</p>
+                  <p>{data.period}</p>
+                  <p>{data.orgName}</p>
                 </div>
               );
             })}

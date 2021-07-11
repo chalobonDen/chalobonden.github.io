@@ -4,62 +4,86 @@ import Sidebar from '../components/Sidebar';
 import Education from '../components/about/Education';
 import Experience from '../components/about/Experience';
 import Skill from '../components/about/Skill';
-import useApiRequest from '../lib/useApiRequest';
 
-const getMonthToString = (m) => {
-  if (m === 1) {
-    return <>Jan</>;
-  } else if (m === 2) {
-    return <>Fed</>;
-  } else if (m === 3) {
-    return <>Mar</>;
-  } else if (m === 4) {
-    return <>Apr</>;
-  } else if (m === 5) {
-    return <>May</>;
-  } else if (m === 6) {
-    return <>June</>;
-  } else if (m === 7) {
-    return <>July</>;
-  } else if (m === 8) {
-    return <>Aug</>;
-  } else if (m === 9) {
-    return <>Sep</>;
-  } else if (m === 10) {
-    return <>Oct</>;
-  } else if (m === 11) {
-    return <>Nov</>;
-  } else if (m === 12) {
-    return <>Dec</>;
-  }
-};
+const educationData = [
+  {
+    id: 1,
+    schoolName: 'College of Art, Media and Technology in Chiang Mai University',
+    period: 'August 7, 2017 - April 5, 2021',
+    major: 'Modern Management and Information Technology',
+    gpa: '3.37',
+  },
+  {
+    id: 2,
+    schoolName: 'Horpra School',
+    period: '2013 - 2016',
+    major: 'Sci-Math',
+    gpa: '3.65',
+  },
+];
+
+const experienceData = [
+  {
+    id: 1,
+    orgName: 'Med CMU operation and data management center',
+    period: 'May 21, 2019 - July 30, 2019',
+    jop_position: 'Data Administrator',
+  },
+  {
+    id: 2,
+    orgName: 'Aritisan Digital',
+    period: 'July 8, 2020 - March 19, 2021',
+    jop_position: 'Front-End Developer',
+  },
+];
+
+const skillData = [
+  {
+    id: 1,
+    name: 'PHP',
+  },
+  {
+    id: 2,
+    name: 'JavaScript',
+  },
+  {
+    id: 3,
+    name: 'C',
+  },
+  {
+    id: 4,
+    name: 'CSS',
+  },
+  {
+    id: 5,
+    name: 'HTML',
+  },
+  {
+    id: 6,
+    name: 'MySQL',
+  },
+  {
+    id: 7,
+    name: 'Vue.js',
+  },
+  {
+    id: 8,
+    name: 'React.js',
+  },
+  {
+    id: 9,
+    name: 'Angular.js',
+  },
+];
 
 const About = () => {
-  const { data, error, isLoaded } = useApiRequest(
-    'https://gitconnected.com/v1/portfolio/chalobonden'
-  );
-  console.log('get data from useApiRequest :', data);
-
-  if (error !== null) {
-    return <div>Error: {error.message}</div>;
-  }
-  if (!isLoaded) {
-    return <div className="text-center pt-96">Loading...</div>;
-  }
-
   return (
     <Layout>
       <Sidebar />
       <div className="withsidebar space-y-5">
-        <Education
-          educationData={data.education}
-          getMonthToString={getMonthToString}
-        />
-        <Experience
-          experienceData={data.work}
-          getMonthToString={getMonthToString}
-        />
-        <Skill skillData={data.skills} />
+        <Education educationData={educationData} />
+        <Experience experienceData={experienceData} />
+        <Skill skillData={skillData} />
         <div className="mt-5 opacity-0">...</div>
       </div>
     </Layout>
